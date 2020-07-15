@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const port = 8500;
+const port = 8000;
 
 // database (mongoDB)
 const db = require('./config/mongoose');
@@ -90,5 +90,5 @@ app.listen(port, function(err){
     if(err){
         console.log("Error in setting up the express server!");
     }
-    console.log("Express server is up and running!");
+    console.log("Express server is up and running!",port);
 });
